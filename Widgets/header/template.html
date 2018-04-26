@@ -1,0 +1,12 @@
+<div class="ws-header" ng-class="{hidden: !c.display}">
+    <ul class="nav nav-pills nav-sm">
+        <li ng-if="!c.breadcrumbs"><a href>{{page.title}}</a></li>
+        <li ng-repeat-start="item in c.breadcrumbs">
+            <a ws-href="{{item.url}}" ng-if="item.url">{{item.label}}</a>
+            <span ng-if="!item.url">{{item.label}}</span>
+        </li>
+        <li ng-if="!$last" ng-repeat-end>
+            <i class="fa fa-chevron-right"></i>
+        </li>
+    </ul>
+</div>

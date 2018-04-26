@@ -1,0 +1,6 @@
+@media (min-width: 800px) {
+  .ws-header,
+  .ws-content {
+    left: 300px;
+  }
+}

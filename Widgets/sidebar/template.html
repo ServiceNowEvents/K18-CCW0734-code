@@ -1,0 +1,46 @@
+<div class="ws-sidebar">
+    <div class="ws-sidebar-info">
+        <div class="details">
+            <h1>Config Portal</h1>
+        </div>
+    </div>
+
+    <div class="ws-navigation">
+        <ul class="first">
+            <li class="menu-item">
+                <a wscp-href="/ws-cp-dashboard" ng-class="{active: c.active == 'ws-cp-dashboard'}" ng-click="c.active == 'ws-cp-dashboard'">
+                    <i class="glyphicon glyphicon-dashboard"></i>
+                    ${Dashboard}
+                </a>
+            </li>
+            <li class="menu-item">
+                <a wscp-href="/ws-cp-settings" ng-class="{active: c.active == 'ws-cp-settings'}" ng-click="c.active == 'ws-cp-settings'">
+                    <i class="glyphicon glyphicon-cog"></i>
+                    ${Settings}
+                </a>
+            </li>
+        </ul>
+        <ul ng-if="c.items.length">
+            <li class="menu-item" ng-repeat="item in c.items">
+                <a wscp-href="{{item.url}}" ng-target="{{item.target}}" ng-class="{active: item.active}">
+                    <i ng-if="item.icon" ng-class="item.icon"></i>
+                    {{item.title}}
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="menu-item">
+                <a href="https://thewhitespace.io" target="_blank">
+                    <i class="glyphicon glyphicon-comment"></i>
+                    ${Contact Support}
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="https://docs.thewhitespace.io/" target="_blank">
+                    <i class="glyphicon glyphicon-education"></i>
+                    ${Documentation}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
