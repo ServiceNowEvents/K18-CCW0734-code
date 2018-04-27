@@ -14,7 +14,7 @@ function($rootScope, $location) {
   function locationChange($event) {
     var s = $location.search();
     // this should match the default page set in Main widget controller
-        c.active = s.xpage || 'ws-wf-dashboard';
+        c.active = s.xpage || 'ws-cp-dashboard';
   }
 
   // check our location on load

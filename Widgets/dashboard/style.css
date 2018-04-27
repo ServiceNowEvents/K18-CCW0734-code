@@ -1,0 +1,17 @@
+.dash-count {
+  border-right: 2px solid #afafaf;
+  margin-top: 1em;
+  text-align: center;
+}
+.dash-count:last-of-type {
+  border: none;
+}
+.dash-count-title {
+  font-size: 1.1em;
+  margin-top: -1em;
+}
+.dash-count-text {
+  font-size: 3em;
+  padding: 0;
+  margin-top: -0.2em;
+}

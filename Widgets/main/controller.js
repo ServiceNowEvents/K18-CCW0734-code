@@ -4,7 +4,7 @@ function($location) {
   var redirect = false;
 
   if (!s.xpage) {
-    s.xpage = 'ws-wf-dashboard'; // this is our default page
+    s.xpage = 'ws-cp-dashboard'; // this is our default page
     s.spa = 1; // let Service Portal know we are in a SPA
     $location.search(s).replace();
   }

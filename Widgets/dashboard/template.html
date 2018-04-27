@@ -4,4 +4,40 @@
             <h1>${Dashboard}</h1>
         </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-3 dash-count">
+        <div class="dash-count-title">
+          Total CI's
+        </div>
+        <div class="dash-count-text">
+          {{c.data.dash_ci_count}}
+        </div>
+      </div>
+      <div class="col-md-3 dash-count">
+        <div class="dash-count-title">
+          Services
+        </div>
+        <div class="dash-count-text">
+          {{c.data.dash_service_count}}
+        </div>
+      </div>
+      <div class="col-md-3 dash-count">
+        <div class="dash-count-title">
+          Hardware
+        </div>
+        <div class="dash-count-text">
+          {{c.data.dash_hardware_count}}
+        </div>
+      </div>
+      <div class="col-md-3 dash-count">
+        <div class="dash-count-title">
+          Applications
+        </div>
+        <div class="dash-count-text">
+          {{c.data.dash_app_count}}
+        </div>
+      </div>
+    </div>
+
 </div>
